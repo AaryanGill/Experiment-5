@@ -1,0 +1,54 @@
+/* Resetting default browser margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensuring the app takes up the full screen height */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  background-color: #f8fafc;
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+
+/* Professional Card Styling */
+.glass-card {
+  background: white;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  animation: slideUp 0.4s ease-out;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Dashboard Skill Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.skill-tag {
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

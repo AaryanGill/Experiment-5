@@ -1,0 +1,93 @@
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* App background */
+body {
+  background: linear-gradient(to bottom right, #f9fafb, #eef2f7);
+  color: #111827;
+}
+
+/* Ensure full-width app */
+#root,
+.App {
+  width: 100%;
+}
+
+/* ================= NAVBAR ================= */
+
+nav {
+  width: 100%;
+  height: 80px;                     /* Increased height */
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+
+  display: flex;
+  align-items: center;
+  padding: 0 80px;                  /* More spacing */
+}
+
+/* Nav links */
+nav a {
+  text-decoration: none;
+  color: #374151;
+  margin-right: 40px;               /* More spacing */
+  font-size: 17px;                  /* Bigger text */
+  font-weight: 600;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Smooth underline animation */
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #2563eb;
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: #2563eb;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* ================= PAGE SECTION ================= */
+
+.page {
+  width: 100%;
+  padding: 80px 120px;              /* More breathing space */
+}
+
+/* Clean section container */
+.card {
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Heading */
+.card h1 {
+  font-size: 36px;                  /* Bigger heading */
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #111827;
+}
+
+/* Text */
+.card p {
+  font-size: 18px;
+  color: #4b5563;
+  line-height: 1.8;
+  max-width: 700px;
+}
